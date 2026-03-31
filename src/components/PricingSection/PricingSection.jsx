@@ -55,7 +55,7 @@ const PricingSection = () => {
     
 
   <div className="card-body rounded-2xl p-10 relative gradient-bg text-white flex flex-col justify-between">
- <div class="badge badge-secondary bottom-107 bg-amber-200 absolute border-none text-amber-900 left-50">Most Popular </div>
+ <div className="badge badge-secondary bottom-107 bg-amber-200 absolute border-none text-amber-900 left-50">Most Popular </div>
 
            <div>
                    <div className="text-left">

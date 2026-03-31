@@ -1,0 +1,69 @@
+
+[
+  {
+    "id": "tool001",
+    "name": "Social Media Content Kit",
+    "description": "AI-powered toolkit for creating engaging social media posts and campaigns.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Post scheduling", "Content templates", "Hashtag suggestions"],
+    "icon": "/products/social-media.png"
+  },
+  {
+    "id": "tool002",
+    "name": "Resume Builder Pro",
+    "description": "Professional AI resume builder with ATS-friendly designs.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["ATS optimization", "Export to PDF", "Custom templates"],
+    "icon": "/products/portfolio.png"
+  },
+  {
+    "id": "tool003",
+    "name": "Automation Toolkit",
+    "description": "AI automation suite for workflows, tasks, and productivity.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Workflow automation", "Task reminders", "Integration with apps"],
+    "icon": "/products/operation.png"
+  },
+  {
+    "id": "tool004",
+    "name": "Premium Stock Assets",
+    "description": "Access to AI-curated premium stock photos, videos, and icons.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["HD photos", "Royalty-free videos", "Icon packs"],
+    "icon": "/products/camera.png"
+  },
+  {
+    "id": "tool005",
+    "name": "Design Templates Pack",
+    "description": "AI-generated design templates for presentations, flyers, and branding.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Presentation templates", "Flyer designs", "Branding kits"],
+    "icon": "/products/design-tool.png"
+  },
+  {
+    "id": "tool006",
+    "name": "AI Writing Pro",
+    "description": "Advanced AI writing assistant for blogs, ads, and professional documents.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Blog generation", "Ad copywriting", "Grammar enhancement"],
+    "icon": "/products/writing_2327400 1.png"
+  }
+]

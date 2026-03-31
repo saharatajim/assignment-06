@@ -7,6 +7,11 @@ import Stats from './components/Stats/Stats.jsx';
 import Workflow from './components/Workflow/Workflow';
 import StepsSection from './components/StepsSection/StepsSection';
 import PricingSection from './components/PricingSection/PricingSection';
+import Products from './components/Products/Products.jsx';
+
+const productsPromise=fetch("/data.json").then(res=>res.json())
+// console.log(productsPromise)
+
 
 const App = () => {
  const [selectedTab,setSelectedTab]=useState("products")
@@ -17,6 +22,7 @@ const App = () => {
    <Banner></Banner>
    <Stats></Stats>
    <section className='text-center container mx-auto my-[60px]'>
+
     <div className='space-y-5'> 
       <h1 className='font-extrabold text-[48px]'>Premium Digital Tools</h1>
       <p>Choose from our curated collection of premium digital products designed <br />
@@ -28,6 +34,7 @@ const App = () => {
     
     </div>
    </section>
+   <Products productsPromise={productsPromise}></Products>
    <StepsSection></StepsSection>
   <PricingSection></PricingSection>
    <Workflow></Workflow>
