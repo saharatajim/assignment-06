@@ -9,6 +9,7 @@ import StepsSection from './components/StepsSection/StepsSection';
 import PricingSection from './components/PricingSection/PricingSection';
 import Products from './components/Products/Products.jsx';
 import Carts from './components/Carts/Carts.jsx';
+import { ToastContainer } from 'react-toastify';
 
 const productsPromise=fetch("/data.json").then(res=>res.json())
 // console.log(productsPromise)
@@ -53,6 +54,7 @@ const App = () => {
   <PricingSection></PricingSection>
    <Workflow></Workflow>
    <Footer></Footer>
+<ToastContainer/>
    </>
   );
 };

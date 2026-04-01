@@ -1,14 +1,15 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({cart,setCart}) => {
 
     const total=cart.reduce((sum,item)=>sum+item.price,0)
     const handleOrder=()=>{
         setCart([])
-        alert("order successfully completed")
+        toast.success("Order proceeded successfully ")
     }
     const handleRemove=(item)=>{
-        alert("item removed from cart")
+        toast.warn("item removed from cart")
         console.log(item)
 const filteredCart=cart.filter(product=>product.id!==item.id)
 console.log(filteredCart)

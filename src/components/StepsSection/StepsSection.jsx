@@ -31,7 +31,7 @@ const StepsSection = () => {
                         <p>Browse our catalog and select the tools that fit your needs.</p>
                     </div>
                     <div className='card shadow p-5 space-y-6' >
-                        <div className='flex justify-end  '><p className=' gradient-bg text-white w-8 font-semibold h-8 rounded-full flex items-center justify-center'>01</p></div>
+                        <div className='flex justify-end  '><p className=' gradient-bg text-white w-8 font-semibold h-8 rounded-full flex items-center justify-center'>03</p></div>
                           <div className='flex justify-center  '>
                             <div className='bg-purple-200 w-30 h-30 rounded-full flex items-center justify-center'>
                                 <img className='' src={rocket} alt="" />
