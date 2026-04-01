@@ -16,7 +16,7 @@ const handleCardButton=(product)=>{
 }
 
     return (
-                    <div className="card w-96 bg-base-100 shadow-sm">
+                    <div className="scale-90 md:scale-100 card w-96 bg-base-100 shadow-sm">
   <div className="card-body">
    <div className='flex justify-end '>
      <span className=" p-2 badge  badge-xs bg-[#E1E7FF]"><p className='gradient-text font-medium'>{product.tag}</p></span>

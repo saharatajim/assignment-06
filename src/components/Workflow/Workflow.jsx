@@ -2,8 +2,8 @@ import React from 'react';
 
 const Workflow = () => {
     return (
-        <div className='gradient-bg py-[120px] container mx-auto text-center text-white'>
-            <div className='space-y-5'>
+        <div className=' gradient-bg py-[120px] container mx-auto text-center text-white'>
+            <div className='scale-85 md:scale-100 space-y-5'>
                 <h1 className='font-extrabold text-4xl '>Ready to Transform Your Workflow?</h1>
                 <p>Join thousands of professionals who are already using Digitools to work smarter.Start your free trial today.</p>
                 <div className='flex gap-4 justify-center'>

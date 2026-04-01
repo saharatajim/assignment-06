@@ -6,7 +6,7 @@ const Products = ({productsPromise,cart,setCart}) => {
     const productsData=use(productsPromise)
     // console.log(productsData)
     return (
-        <div className='container mx-auto justify-center grid grid-cols-3 gap-4 pb-12'>
+        <div className='container mx-auto justify-center grid md:grid-cols-3 gap-4 pb-12'>
             {
                 productsData.map((product,index)=>
                 

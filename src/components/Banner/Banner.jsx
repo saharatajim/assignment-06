@@ -5,7 +5,7 @@ import banner from '../../assets/assets/essential/banner.png'
 const Banner = () => {
     return (
         <div className='container mx-auto md:flex gap-14 justify-center items-center py-14'>
-            <div className='scale-80 md:scale-100 space-y-4'>
+            <div className='scale-70 md:scale-100 space-y-4'>
                 <div className='badge flex gap-2 bg-[#E1E7FF]'>
                     <img className='scale-50' src={badge} alt="" />
                     <p className='gradient-text'>New: AI-Powered Tools Available</p>
@@ -26,7 +26,7 @@ const Banner = () => {
             </div>
 
             <div>
-                <img className='scale-80 md:scale-100' src={banner} alt="" />
+                <img className='shadow-xl scale-80 md:scale-100' src={banner} alt="" />
             </div>
         </div>
     );

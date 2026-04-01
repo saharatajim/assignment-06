@@ -8,7 +8,7 @@ const PricingSection = () => {
                             <h1 className='font-extrabold text-5xl'>Simple, Transparent Pricing </h1>
                             <p>Choose the plan that fits your needs. Upgrade or downgrade anytime..</p>
                             {/* cards container */}
-                           <div className='grid grid-cols-3 gap-4 justify-center'>
+                           <div className='grid md:grid-cols-3 gap-4 justify-center'>
 {/* card-1 */}
  <div className="card  bg-base-100 shadow-sm max-w-112.5">
   <div className="card-body rounded-2xl p-10 bg-[#F2F2F2] flex flex-col justify-between">

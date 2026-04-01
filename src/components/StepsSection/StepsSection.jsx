@@ -9,8 +9,8 @@ const StepsSection = () => {
             <div className='text-center p-10 space-y-6'>
                 <h1 className='font-extrabold text-5xl'>Get Started in 3 Steps </h1>
                 <p>Start using premium digital tools in minutes, not hours.</p>
-                <div className='grid grid-cols-3 gap-5'>
-                    <div className='card shadow p-5 space-y-6' >
+                <div className='grid md:grid-cols-3 gap-5'>
+                    <div className='card  shadow p-5 space-y-6' >
                         <div className='flex justify-end  '><p className=' gradient-bg text-white w-8 font-semibold h-8 rounded-full flex items-center justify-center'>01</p></div>
                           <div className='flex justify-center  '>
                             <div className='bg-purple-200 w-30 h-30 rounded-full flex items-center justify-center'>
