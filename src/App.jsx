@@ -16,10 +16,12 @@ const productsPromise=fetch("/data.json").then(res=>res.json())
 
 const App = () => {
  const [selectedTab,setSelectedTab]=useState("products")
+ const [cart,setCart]=useState([])
+// console.log(cart)
 
   return (
    <>
-   <NavBar></NavBar>
+   <NavBar cart={cart}></NavBar>
    <Banner></Banner>
    <Stats></Stats>
    <section className='text-center container mx-auto my-15'>
@@ -30,7 +32,7 @@ const App = () => {
          to boost your productivity and creativity.</p>
       <div>
         <button onClick={()=>setSelectedTab("products")} className={`btn ${selectedTab==="products" &&'gradient-bg text-white' } rounded-l-full `}>Products</button>
-        <button onClick={()=>setSelectedTab("cart")} className={`btn bg-base-100 rounded-r-full ${selectedTab==="cart"&& 'gradient-bg text-white'}`}>Cart (0)</button>
+        <button onClick={()=>setSelectedTab("cart")} className={`btn bg-base-100 rounded-r-full ${selectedTab==="cart"&& 'gradient-bg text-white'}`}>Cart ({cart.length})</button>
       </div>
     
     </div>
@@ -38,12 +40,12 @@ const App = () => {
 
    <div>
     {
-      selectedTab==="products" &&  <Products productsPromise={productsPromise}></Products>
+      selectedTab==="products" &&  <Products cart={cart} setCart={setCart} productsPromise={productsPromise}></Products>
     }
    </div>
    <div>
     {
-      selectedTab==="cart" &&  <Carts></Carts>
+      selectedTab==="cart" &&  <Carts cart={cart} setCart={setCart}></Carts>
     }
    </div>
   
