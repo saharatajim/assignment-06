@@ -23,7 +23,8 @@ const Products = ({productsPromise}) => {
       <h2 className="text-[24px] font-bold">{product.name}</h2>
 
       <p>{product.description}</p>
-      <span className="text-xl">$29/mo</span>
+      <p className="font-bold text-[24px] mt-4">${product.price}/<span className='font-medium text-[16px]'>Mo</span>
+       </p>
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
       {
