@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import './App.css'
 import NavBar from './components/NavBar/NavBar';
 import Banner from './components/Banner/Banner';
@@ -41,7 +41,11 @@ const App = () => {
 
    <div>
     {
-      selectedTab==="products" &&  <Products cart={cart} setCart={setCart} productsPromise={productsPromise}></Products>
+      selectedTab==="products" && 
+      <Suspense fallback={<div className='text-center'><span className="loading loading-spinner loading-md"></span></div>}>
+          <Products cart={cart} setCart={setCart} productsPromise={productsPromise}></Products>
+      </Suspense> 
+    
     }
    </div>
    <div>
