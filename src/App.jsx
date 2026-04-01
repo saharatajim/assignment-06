@@ -8,6 +8,7 @@ import Workflow from './components/Workflow/Workflow';
 import StepsSection from './components/StepsSection/StepsSection';
 import PricingSection from './components/PricingSection/PricingSection';
 import Products from './components/Products/Products.jsx';
+import Carts from './components/Carts/Carts.jsx';
 
 const productsPromise=fetch("/data.json").then(res=>res.json())
 // console.log(productsPromise)
@@ -21,7 +22,7 @@ const App = () => {
    <NavBar></NavBar>
    <Banner></Banner>
    <Stats></Stats>
-   <section className='text-center container mx-auto my-[60px]'>
+   <section className='text-center container mx-auto my-15'>
 
     <div className='space-y-5'> 
       <h1 className='font-extrabold text-[48px]'>Premium Digital Tools</h1>
@@ -34,7 +35,18 @@ const App = () => {
     
     </div>
    </section>
-   <Products productsPromise={productsPromise}></Products>
+
+   <div>
+    {
+      selectedTab==="products" &&  <Products productsPromise={productsPromise}></Products>
+    }
+   </div>
+   <div>
+    {
+      selectedTab==="cart" &&  <Carts></Carts>
+    }
+   </div>
+  
    <StepsSection></StepsSection>
   <PricingSection></PricingSection>
    <Workflow></Workflow>
